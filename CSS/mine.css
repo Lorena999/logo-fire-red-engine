@@ -1,0 +1,44 @@
+.mine {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #cc212a;
+  font-family: "Monserrat";
+  text-transform: capitalize;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 3px solid #cc212a;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #cc212a;
+  transform: translate(0 -50px);
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  transform: translate(0, -50%);
+}
+.copy {
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  .logo {
+    transform: translate(0, 0);
+  }
+}
